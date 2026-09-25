@@ -205,6 +205,16 @@
   .psub h3{font-size:19px}
   .psub p{margin:0;font-size:13.3px;color:var(--muted)}
   .pgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+  .pgrid.three{grid-template-columns:repeat(3,1fr);align-items:stretch}
+  @media (max-width:900px){.pgrid.three{grid-template-columns:1fr 1fr}}
+  @media (max-width:640px){.pgrid.three{grid-template-columns:1fr}}
+  .pcard.cur{border-left:2px solid var(--accent)}
+  .pstat{align-self:flex-start;font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:3px 8px;border-radius:2px}
+  .curlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+  .curlist li{padding-bottom:12px;border-bottom:1px solid var(--line-soft)}
+  .curlist li:last-child{border-bottom:none;padding-bottom:0}
+  .curlist .cn{display:block;font-size:13.8px;color:var(--text);font-weight:500;line-height:1.35}
+  .curlist .cc{display:block;font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-top:3px}
   @media (max-width:740px){.pgrid{grid-template-columns:1fr}}
   .pcard{border:1px solid var(--line);border-radius:3px;background:var(--surface);overflow:hidden;display:flex;flex-direction:column}
   .pbody{padding:19px 21px 21px;display:flex;flex-direction:column;gap:12px;flex:1}
@@ -344,10 +354,10 @@
     <div class="shead rv"><span class="eyebrow">About</span><div class="rule"></div></div>
     <div class="split rv">
       <div class="prose">
-        <p>Studying mechanical engineering has equipped me with options as I approach my career post-grad. My undergraduate education has given me the tools to approach unfamiliar problems, even when I don't yet understand all the mechanics governing them.</p>
-        <p>I have spent two summers working as a hardware engineer at MedTech startups in the Boston area. Both roles integrated designing for manufacturing and translating hardware designs into reliable, manufacturable processes. Through this work, I have gained experience in hands-on prototyping, biocompatible mechanical design, process development, and manufacturing.</p>
-        <p>My curiosity guided me into two biomedical engineering labs at Tufts and an internship at the MIT Technology Licensing Office. In each role, I have had the opportunity to dive deeply into biology and physics, whether through designing experiments, developing technical solutions, or analyzing patents.</p>
-        <p>I do my best work when I am passionate about the product or service I am creating and intellectually intrigued by the challenges involved in creating it. Roles that offer collaboration, mentorship, and meaningful ownership are the strongest launching point for my career.</p>
+        <p>Studying mechanical engineering has equipped me with options. I know how to approach unfamiliar problems, even when I don't yet understand all the mechanics governing them.</p>
+        <p>I have spent two summers working in manufacturing and product design engineering at MedTech startups in the Boston area. Both roles involved translating biomechanical designs into reliable, manufacturable products and processes. Through this work, I gained experience in rapid prototyping, PCB design, biocompatible mechanical design, process development, and manufacturing.</p>
+        <p>My curiosity has also led me into two biomedical engineering labs at Tufts and an internship at the MIT Technology Licensing Office. In each role, I engaged with biology and physics through designing experiments, developing technical solutions, or analyzing emerging technologies and patents.</p>
+        <p>I do my best work when I am passionate about what I am creating. For me, that passion comes from intellectual curiosity and meaningful impact. As I begin my career, I am looking for roles where I can continue learning through collaboration and mentorship while taking meaningful ownership of my work.</p>
       </div>
       <div>
         <div class="aside">
@@ -416,9 +426,10 @@
       </div>
       <div class="aside">
         <h3>Current Projects</h3>
-        <ul class="todo-list">
-          <li>&mdash; add a current project &mdash;</li>
-          <li>&mdash; add a current project &mdash;</li>
+        <ul class="curlist">
+          <li><span class="cn">Automated Weeding System</span><span class="cc">Senior Capstone</span></li>
+          <li><span class="cn">Jet Engine Retrofitting</span><span class="cc">Inventive Design</span></li>
+          <li><span class="cn">Solar Powered Waterfall</span><span class="cc">Personal Project</span></li>
         </ul>
       </div>
     </div>
@@ -595,7 +606,7 @@
         </div>
 
         <div class="confnote">
-          SETPOINTS, TOLERANCES, PART NUMBERS, AND COLLEAGUE NAMES FROM THE SOURCE DOCUMENTS ARE DELIBERATELY WITHHELD. THE STRUCTURE AND THE REASONING ARE MINE TO SHOW; THE VALUES BELONG TO DYNOCARDIA.
+          Important details withheld
         </div>
       </div>
 
@@ -740,6 +751,49 @@
 <section id="projects">
   <div class="wrap">
     <div class="shead rv"><span class="eyebrow">Projects</span><div class="rule"></div></div>
+
+    <div class="pgroup rv">
+      <div class="psub"><h3>Current Projects</h3><p>Work in progress through the 2026&ndash;27 academic year.</p></div>
+      <div class="pgrid three">
+
+        <div class="pcard cur">
+          <div class="pbody">
+            <span class="pstat">Ideation Phase</span>
+            <div class="porg">Senior Capstone</div>
+            <h3>Automated Weeding System</h3>
+            <p>A solar powered system that automatically removes weeds in organic farms. Currently in the ideation phase, working from market research and grower interviews toward a first prototype.</p>
+            <div class="tags">
+              <span class="tag">Market Research</span>
+              <span class="tag">Client Interaction</span>
+              <span class="tag">Rapid Prototyping</span>
+              <span class="tag">OnShape</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard cur">
+          <div class="pbody">
+            <span class="pstat">In Progress</span>
+            <div class="porg">Inventive Design</div>
+            <h3>Jet Engine Retrofitting</h3>
+            <p>Redesigning a jet engine to fit into a helicopter, reworking the geometry and mounting to suit an airframe it was never built for.</p>
+            <div class="tags">
+              <span class="tag">OnShape</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard cur">
+          <div class="pbody">
+            <span class="pstat">Personal Project</span>
+            <div class="porg">Independent Build</div>
+            <h3>Solar Powered Waterfall</h3>
+            <p>A realistic waterfall build whose pump runs entirely on solar power, with a custom PCB driving the interactions between panel, storage, and pump.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
     <div class="pgroup rv">
       <div class="psub"><h3>BioSens8 &mdash; Electrochemical Sensor</h3><p>Hardware built at an MIT "The Engine" portfolio company.</p></div>
