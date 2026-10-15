@@ -205,9 +205,8 @@
   .psub h3{font-size:19px}
   .psub p{margin:0;font-size:13.3px;color:var(--muted)}
   .pgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
-  .pgrid.three{grid-template-columns:repeat(3,1fr);align-items:stretch}
-  @media (max-width:900px){.pgrid.three{grid-template-columns:1fr 1fr}}
-  @media (max-width:640px){.pgrid.three{grid-template-columns:1fr}}
+  .pgrid.cur-grid{align-items:stretch}
+  @media (max-width:640px){.pgrid.cur-grid{grid-template-columns:1fr}}
   .pcard.cur{border-left:2px solid var(--accent)}
   .pstat{align-self:flex-start;font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:3px 8px;border-radius:2px}
   .curlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
@@ -357,7 +356,7 @@
         <p>Studying mechanical engineering has equipped me with options. I know how to approach unfamiliar problems, even when I don't yet understand all the mechanics governing them.</p>
         <p>I have spent two summers working in manufacturing and product design engineering at MedTech startups in the Boston area. Both roles involved translating biomechanical designs into reliable, manufacturable products and processes. Through this work, I gained experience in rapid prototyping, PCB design, biocompatible mechanical design, process development, and manufacturing.</p>
         <p>My curiosity has also led me into two biomedical engineering labs at Tufts and an internship at the MIT Technology Licensing Office. In each role, I engaged with biology and physics through designing experiments, developing technical solutions, or analyzing emerging technologies and patents.</p>
-        <p>I do my best work when I am passionate about what I am creating. For me, that passion comes from intellectual curiosity and meaningful impact. As I begin my career, I am looking for roles where I can continue learning through collaboration and mentorship while taking meaningful ownership of my work.</p>
+        <p>I do my best work when I am passionate about what I am creating. For me, that passion comes from intellectual curiosity, leadership, and meaningful impact. As I begin my career, I am looking for roles where I can continue learning through collaboration and mentorship while taking meaningful ownership of my work. I want to become the kind of engineer a team relies on, and eventually the one doing the mentoring.</p>
       </div>
       <div>
         <div class="aside">
@@ -429,6 +428,7 @@
           <li><span class="cn">Automated Weeding System</span><span class="cc">Senior Capstone</span></li>
           <li><span class="cn">Mars Habitation Pod</span><span class="cc">Inventive Design</span></li>
           <li><span class="cn">Solar Powered Waterfall</span><span class="cc">Personal Project</span></li>
+          <li><span class="cn">Marimba Bar</span><span class="cc">Music Engineering</span></li>
         </ul>
       </div>
     </div>
@@ -753,7 +753,7 @@
 
     <div class="pgroup rv">
       <div class="psub"><h3>Current Projects</h3><p>Work in progress through the 2026&ndash;27 academic year.</p></div>
-      <div class="pgrid three">
+      <div class="pgrid cur-grid">
 
         <div class="pcard cur">
           <div class="pbody">
@@ -793,6 +793,15 @@
             <p>A realistic waterfall build whose pump runs entirely on solar power, with a custom PCB driving the interactions between panel, storage, and pump.</p>
           </div>
         </div>
+
+          <div class="pcard cur">
+            <div class="pbody">
+              <span class="pstat">In Progress</span>
+              <div class="porg">Music Engineering</div>
+              <h3>Marimba Bar</h3>
+              <p>Designing and cutting a tuned marimba bar, where pitch and timbre come out of geometry alone. Length and thickness set the fundamental; the undercut arch on the underside tunes the overtones against it.</p>
+            </div>
+          </div>
 
       </div>
     </div>
